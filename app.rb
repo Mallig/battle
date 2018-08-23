@@ -14,6 +14,10 @@ class Battle < Sinatra::Base
     redirect "/play"
   end
 
+  get "/attack" do
+    erb(:attack)
+  end
+
   get "/play" do
     erb(:play)
   end
