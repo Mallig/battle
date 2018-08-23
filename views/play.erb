@@ -1,5 +1,7 @@
 <%= $player_1.name %> v. <%= $player_2.name %>, the showdown of the century
-<%= $player_2.name %> HP: 100
+<br>
+<%= $player_2.name %> HP: <%= $player_2.health %>
 
 
-<a href="/attack">Attack</a>
+<a href="/attack?attacker=player_1">Attack</a>
+

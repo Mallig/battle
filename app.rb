@@ -1,5 +1,5 @@
 require 'sinatra/base'
-require 'player'
+require './lib/player'
 
 
 class Battle < Sinatra::Base
@@ -16,6 +16,8 @@ class Battle < Sinatra::Base
   end
 
   get "/attack" do
+    p params
+    params["attacker"] = "player_1" ? $player_2.attack : $player_1.attack
     erb(:attack)
   end
 
