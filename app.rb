@@ -17,7 +17,7 @@ class Battle < Sinatra::Base
 
   get "/attack" do
     p params
-    params["attacker"] = "player_1" ? $player_2.attack : $player_1.attack
+    params["attacker"] == "player_1" ? $player_2.attack : $player_1.attack
     erb(:attack)
   end
 
