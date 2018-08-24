@@ -13,17 +13,8 @@ describe Player do
 
   describe "#health" do
     it "can return its health" do
-      player = Player.new("Hamish")
       expect(player.health).to eq 100
     end
   end
-
-  # describe "#attack" do
-  #   it "can reduce the players HP by 10" do
-  #     expect { player.attack(player2) }.to change { player2.health }.by -10
-  #   end
-  # end
-
-
 
 end 

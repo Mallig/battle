@@ -31,8 +31,6 @@ end
 
 
 
-
-
 # As Player 1,
 # So I can win a game of Battle,
 # I want to attack Player 2, and I want to get a confirmation
