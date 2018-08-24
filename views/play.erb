@@ -1,7 +1,9 @@
 <%= @game.player_1.name %> v. <%= @game.player_2.name %>, the showdown of the century
 <br>
+It is <%= @game.player_1.name %>'s turn!
+<br><br>
 <%= @game.player_1.name %> HP: <%= @game.player_1.health %>
 
 <br>
-<%= @game.player_2.name %> HP: <%= @game.player_2.health %>
-<a href="/attack">Attack</a>
+<%= @game.player_2.name %> HP: <%= @game.player_2.health %><a href="/attack">Attack</a>
+
