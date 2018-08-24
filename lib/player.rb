@@ -6,7 +6,7 @@ class Player
     @health = 100
   end
 
-  def attack
+  def receive_damage
     @health -= 10
   end
 

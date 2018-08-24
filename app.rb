@@ -12,12 +12,15 @@ class Battle < Sinatra::Base
   post "/names" do
     $player_1 = Player.new(params["player_1"])
     $player_2 = Player.new(params["player_2"])
+    $game = Game.new
     redirect "/play"
   end
 
   get "/attack" do
     p params
-    params["attacker"] == "player_1" ? $player_2.attack : $player_1.attack
+    @player_1 = $player_1
+    @player_2 = $player_2
+    $game.attack(@player_2)
     erb(:attack)
   end
 

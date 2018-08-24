@@ -1,6 +1,6 @@
 require_relative '../../app.rb'
 
-feature "The Battle app" do
+feature "The game set up" do
 
   scenario "can display two players' names" do
     sign_in_and_play
